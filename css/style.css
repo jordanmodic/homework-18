@@ -127,6 +127,10 @@ header {
     font-family: 'Aleo', serif;
     font-size: 30px;
 }
+img {
+    max-width: 70%;
+    height: auto;
+}
 /*old about me css*/
 .hero {
    padding: 40px;
@@ -297,6 +301,7 @@ li {
     list-style: none;
     font-size: 20px;
     color: #747070;
+    padding: .5em;
 }
 .subtitle2 {
     font-size: 24px;
@@ -324,11 +329,13 @@ li {
     border-bottom: solid;
     border-color: #FFD5C4;
     border-width: 3px;
+    width: 2.7em;
 }
 .roles-title {
     border-bottom: solid;
     border-color: #FFD5C4;
     border-width: 3px;
+    width: 2.7em;
 }
 .contact {
     border-style: solid;
@@ -340,6 +347,17 @@ li {
 .email-top {
     border-bottom: solid #FFD5C4;
     border-width: 3px;
+    width: 2.7em;
+}
+.phone-top {
+    border-bottom: solid #FFD5C4;
+    border-width: 3px;
+    width: 2.7em;  
+}
+.linkedin-top {
+    border-bottom: solid #FFD5C4;
+    border-width: 3px;
+    width: 2.7em;
 }
 .footer-container {
     display: flex;
