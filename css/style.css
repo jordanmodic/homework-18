@@ -144,6 +144,8 @@ header {
     padding: 50px;
     margin: 40px;
     max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 .hero-content {
@@ -172,33 +174,66 @@ header {
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: row;
-    border-style: solid;
-    border-color: #FFD5C4;
-    border-radius: 20px;
-    border-width: 4px;
-    background: linear-gradient(270deg, rgba(230, 232, 255, 0.9) 2.08%, rgba(230, 232, 255, 0.8) 38.02%, rgba(230, 246, 255, 0.8) 68.23%, rgba(230, 246, 255, 0.8) 95.31%);
-    padding: 50px;
+    border-width: 1px;
+    padding-top: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    position: relative;
 }
+
 .about-image {
     border-style: solid;
     border-color: #FFD5C4;
     border-width: 3px;
-
+    height: 100%
+}
+.image {
+    height: 100%;
+}
+img {
+    margin: 0;
 }
 .about-title {
-    linear-gradient(270deg, rgba(230, 232, 255, 0.9) 2.08%, rgba(230, 232, 255, 0.8) 38.02%, rgba(230, 246, 255, 0.8) 68.23%, rgba(230, 246, 255, 0.8) 95.31%);
+    background: linear-gradient(270deg, rgba(230, 232, 255, 0.9) 2.08%, rgba(230, 232, 255, 0.8) 38.02%, rgba(230, 246, 255, 0.8) 68.23%, rgba(230, 246, 255, 0.8) 95.31%);
     border-style: solid;
     border-color: #FFD5C4;
     border-width: 3px;
+    width: 26em;
+    display: flex;
+    justify-content: flex-start;
+    padding: .2em;
+    padding-left: .8em;
 
 }
 .about-text {
-    linear-gradient(270deg, rgba(230, 232, 255, 0.9) 2.08%, rgba(230, 232, 255, 0.8) 38.02%, rgba(230, 246, 255, 0.8) 68.23%, rgba(230, 246, 255, 0.8) 95.31%);
+    background: linear-gradient(270deg, rgba(230, 232, 255, 0.9) 2.08%, rgba(230, 232, 255, 0.8) 38.02%, rgba(230, 246, 255, 0.8) 68.23%, rgba(230, 246, 255, 0.8) 95.31%);
     border-style: solid;
     border-color: #FFD5C4;
     border-width: 3px;
-  
+    padding-top: 1em;
+    width: 28em;
+    padding-left: .6em;
+    padding-right: .6em;
+    padding-bottom: .6em;
+    position: absolute;
+    top: 6em;
+    z-index: -1;
 }
+/*work content section*/
+.work-container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.work-title {
+    border-style: solid;
+    border-color: #FFD5C4;
+    border-width: 3px;
+    padding: .5em;
+    width: 11em
+}
+
 .footer-container {
     display: flex;
     justify-content: space-between;
