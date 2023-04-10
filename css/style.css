@@ -131,62 +131,13 @@ img {
     max-width: 100%;
     height: auto;
 }
-/*old about me css*/
-.hero {
-   padding: 40px;
-   padding-left: 40px;
-   padding-right: 40px;
-   border-style: solid;
-   border-color: #FFD5C4;
-   border-radius: 20px;
-   border-width: 4px;
-   margin-top: 100px;
-   margin-left: 25%;
-   margin-right: 25%;
-   background: linear-gradient(270deg, rgba(230, 232, 255, 0.9) 2.08%, rgba(230, 232, 255, 0.8) 38.02%, rgba(230, 246, 255, 0.8) 68.23%, rgba(230, 246, 255, 0.8) 95.31%);
-}
-.container {
-    padding: 50px;
-    max-width: 75%;
-    margin-left: 10%;
-    margin-right: 15%;
-
-}
-.hero-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-}
-.hero-text {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    max-width: 450px;
-}
-.hero-button {
-    border-style: solid;
-    border-radius: 20px;
-    color: #FFD5C4;
-    background-color: #FFD5C4;
-    padding: 10px;
-}
-/*new about section*/
-
-.about-me {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: row;
-    border-width: 1px;
-    padding-top: 20px;
-    padding-right: 50px;
-    padding-left: 50px;
-    padding-bottom: 50px;
-    position: relative;
-    margin-left: 15%;
-    margin-right: 10%;
-}
+ @media (max-width: 600px) {
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
 
 .about-image {
     border-style: solid;
@@ -196,6 +147,10 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.about-image img {
+    width: 100%;
+    height: auto;
 }
 
 .about-title {
@@ -216,7 +171,66 @@ img {
     border-color: #FFD5C4;
     border-width: 3px;
     padding-top: 1em;
-    width: 28em;
+    width: 50%;
+    padding-left: .6em;
+    padding-right: .6em;
+    padding-bottom: .6em;
+    position: absolute;
+    top: 6em;
+    z-index: -1;
+ }
+}
+/*new about section*/
+
+.about-me {
+    /*display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;*/
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 10px;
+    border-width: 1px;
+    padding-top: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    position: relative;
+    margin-left: 15%;
+    margin-right: 10%;
+}
+
+.about-image {
+    border-style: solid;
+    border-color: #FFD5C4;
+    border-width: 3px;
+    height: 100%;
+    display: block;
+}
+.about-image img {
+    width: 100%;
+    height: auto;
+}
+
+.about-title {
+    background: linear-gradient(270deg, rgba(230, 232, 255, 0.9) 2.08%, rgba(230, 232, 255, 0.8) 38.02%, rgba(230, 246, 255, 0.8) 68.23%, rgba(230, 246, 255, 0.8) 95.31%);
+    border-style: solid;
+    border-color: #FFD5C4;
+    border-width: 3px;
+    width: 26em;
+    display: flex;
+    justify-content: flex-start;
+    padding: .2em;
+    padding-left: .8em;
+
+}
+.about-text {
+    background: linear-gradient(270deg, rgba(230, 232, 255, 0.9) 2.08%, rgba(230, 232, 255, 0.8) 38.02%, rgba(230, 246, 255, 0.8) 68.23%, rgba(230, 246, 255, 0.8) 95.31%);
+    border-style: solid;
+    border-color: #FFD5C4;
+    border-width: 3px;
+    padding-top: 1em;
+    width: 50%;
     padding-left: .6em;
     padding-right: .6em;
     padding-bottom: .6em;
@@ -254,18 +268,24 @@ img {
     align-items: flex-start;
     flex-direction: row;*/
     display: grid;
-    grid-template-columns: 60% 40%;
-    padding-top: 2em;
-    padding-bottom: 2em;
+    grid-template-columns: 50% 50%;
+    column-gap: 10px;
+    padding-top: 2%;
+    padding-bottom: 2%;
     position: relative;
 }
+.case-study-content .reverse div:nth-child(1) {
+    order: 2;
+}
+.case-study-content .reverse div:nth-child(2) {
+    order: 1;
+}
+     
 .case-study-image {
     border-style: solid;
     border-color: #FFD5C4;
     border-width: 3px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
 }
 .case-study-title {
     border-style: solid;
@@ -310,6 +330,7 @@ li {
     justify-content: space-between;
     align-items: flex-start;
     flex-direction: row;
+    gap: 10px;
 }
 .skills-roles {
     display: flex;
