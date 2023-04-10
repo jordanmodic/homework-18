@@ -128,7 +128,7 @@ header {
     font-size: 30px;
 }
 img {
-    max-width: 70%;
+    max-width: 100%;
     height: auto;
 }
 /*old about me css*/
@@ -197,12 +197,7 @@ img {
     justify-content: center;
     align-items: center;
 }
-.image {
-    height: 100%;
-}
-img {
-    margin: 0;
-}
+
 .about-title {
     background: linear-gradient(270deg, rgba(230, 232, 255, 0.9) 2.08%, rgba(230, 232, 255, 0.8) 38.02%, rgba(230, 246, 255, 0.8) 68.23%, rgba(230, 246, 255, 0.8) 95.31%);
     border-style: solid;
@@ -254,10 +249,12 @@ img {
     border-color: #FFD5C4;
 }
 .case-study-content {
-    display: flex;
+    /*display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    flex-direction: row;
+    flex-direction: row;*/
+    display: grid;
+    grid-template-columns: 60% 40%;
     padding-top: 2em;
     padding-bottom: 2em;
     position: relative;
